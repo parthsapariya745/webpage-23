@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giftshop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- google fonts link -->
+
+  <!-- remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- remix icon cdn -->
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+  }
+</style>
+<body>
+  <div class="bg w-full h-auto">
+    <!-- navbar -->
+    <div class="navbar w-full h-[91px] bg-[url('./Assets/header-bg.png')] bg-cover object-cover bg-center bg-no-repeat">
+      <div class="navbar-list w-full h-full flex justify-between lg:px-[18px] lg:max-w-[1024px] md:max-w-[768px] md:px-[20px] px-[40px] sm:max-w-[640px] mx-auto">
+        <div class="navlogo h-full w-auto flex items-center">
+          <img src="./Assets/logo.png" class="w-[73.5%]" alt="">
+        </div>
+        <div class="navmenu h-full w-auto flex items-center lg:gap-14 lg:text-[20px] md:gap-7 md:text-[17px]">
+          <img src="./Assets/toggle-menu.png" class="md:hidden sm:block" alt="">
+          <a href="#" class="text-black duration-[400ms] hover:text-white hover:duration-[400ms] hidden md:block sm:hidden">Home</a>
+          <a href="#" class="text-black duration-[400ms] hover:text-white hover:duration-[400ms] hidden md:block sm:hidden">About</a>
+          <a href="#" class="text-black duration-[400ms] hover:text-white hover:duration-[400ms] hidden md:block sm:hidden">Our gifts</a>
+          <a href="#" class="text-black duration-[400ms] hover:text-white hover:duration-[400ms] hidden md:block sm:hidden">Shop</a>
+          <a href="#" class="text-black duration-[400ms] hover:text-white hover:duration-[400ms] hidden md:block sm:hidden">Contact Us</a>
+          <img src="./Assets/search-icon.png" class="cursor-pointer hidden md:block sm:hidden" alt="">
+          <img src="./Assets/user-icon.png" class="cursor-pointer hidden md:block sm:hidden" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- hero-section -->
+    <div class="hero-box w-full h-auto md:flex md:flex-row md:bg-[url('./Assets/banner-bg.png')] md:bg-cover md:object-cover md:bg-center md:bg-no-repeat sm:flex-col">
+      <div class="hero-dtl h-full xl:pt-[180px] xl:pl-[260px] lg:pl-[50px] lg:pt-[110px] md:pl-[30px] md:pt-[54px] md:w-1/2 md:bg-none sm:h-full sm:px-[35px] sm:pt-[45px] sm:pb-[22px] sm:text-left sm:pr-[3px] sm:bg-[url('./Assets/hero-bg.png')] sm:bg-cover sm:object-cover sm:bg-center sm:bg-no-repeat 
+      bg-[url('./Assets/hero-bg.png')] bg-cover object-cover bg-center bg-no-repeat px-[30px] pt-[45px] pb-[22px] text-center">
+        <h2 class="text-white text-[50px] lg:text-[50px] md:text-[36px] font-bold">Our Best</h2>
+        <h1 class="text-black text-[60px] lg:text-[60px] md:text-[46px] font-bold pt-[10px]">Gifts Shop</h1>
+        <p class="text-[17px] font-light pt-[27px]">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested</p>
+        <button class="h-[60px] w-[170px] rounded-[17px] lg:h-[63px] lg:w-[194px] md:h-[55px] md:w-[160px] mt-[19px] bg-white text-black lg:rounded-[20px] 
+        md:rounded[17px] border-none text-[18px] duration-[400ms] hover:bg-black hover:text-white hover:duration-[400ms]">Read More</button>
+      </div>
+      <div class="hero-img h-full md:w-1/2 flex justify-end">
+        <img src="./Assets/img-1.png" class="md:w-[98.6%]" alt="">
+      </div>
+    </div>
+    <!-- hero-section -->
+
+    <!-- about section -->
+    <div class="about w-full h-auto pt-[120px] lg:px-[22px] lg:max-w-[1024px] md:max-w-[768px] md:px-[50px] md:flex-row flex justify-between items-center flex-col mx-auto">
+      <div class="about-dtl h-full px-[40px] text-center lg:pr-[0px] md:w-[46%] md:pr-[10px] md:text-left sm:px-[40px] sm:text-center">
+        <h1 class="text-[50px] font-bold">About Us</h1>
+        <p class="lg:text-[17px] md:text-[14px] font-light pt-7">irst true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alw</p>
+        <button class="h-[60px] w-[145px] lg:h-[63px] lg:w-[194px] md:h-[60px] md:w-[145px] sm:h-[60px] sm:w-[145px] mt-[19px] bg-[#B625E8] text-white rounded-[20px] border-none text-[18px] duration-[400ms] hover:bg-[#000000] hover:duration-[400ms]">Read More</button>
+      </div>
+      <div class="about-img h-full w-[68%] md:w-[54%] sm:w-[68%]">
+        <img src="./Assets/img-3.png" class="h-full w-full" alt="">
+      </div>
+    </div>
+    <!-- about section -->
+
+    <!-- gift section -->
+    <div class="giftbg w-full h-auto bg-[url('./Assets/gift-bg.png')] bg-cover object-cover bg-no-repeat md:py-[250px] sm:py-[100px] py-[80px]">
+      <div class="gift-box h-full flex flex-col items-center text-center xl:max-w-[1280px] xl:px-[120px] lg:max-w-[1024px] lg:px-[30px] md:max-w-[768px] md:px-[30px] sm:max-w-[640px] px-[20px] mx-auto">
+        <h1 class="text-[50px] font-bold text-white">Our gifts</h1>
+        <p class="lg:text-[17px] md:text-[14px] text-white font-light pt-7">irst true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alw</p>
+        <div class="gift-list w-full h-[800px] lg:h-[400px] md:h-[270px] sm:h-[800px] mt-16 flex md:flex-row flex-col justify-between md:gap-16 gap-36">
+          <div class="gift-item h-full w-full md:w-1/2 relative flex justify-center bg-[url('./Assets/img-5.png')] bg-cover object-cover bg-center bg-no-repeat">
+            <div class="gift-price h-auto w-[80%] pt-[25px] pr-[5px] pb-[30px] pl-[28px] text-left lg:w-[86%] md:w-[95%] sm:w-[80%] lg:pt-[25px] md:pt-[16px] sm:pt-[25px] sm:pr-[2px] lg:pb-[30px] md:pb-[18px] sm:pb-[30px] lg:pl-[28px] md:pl-[18px] sm:pl-[28px] rounded-[10px] bg-[#000000] absolute lg:top-[310px] md:top-[195px] sm:top-[275px] top-[275px]">
+              <h1 class="text-white text-2xl font-bold">Volis <span class="text-[#1CB2D2]">$60</span></h1>
+              <p class="lg:text-[15px] md:text-[13px] sm:text-[15px] text-white font-light pt-3">There are many variations of passages of Lorem Ipsum available, but the majo</p>
+            </div>
+          </div>
+          <div class="gift-item h-full w-full md:w-1/2 relative flex justify-center bg-[url('./Assets/img-6.png')] bg-cover object-cover bg-center bg-no-repeat">
+            <div class="gift-price h-auto w-[80%] pt-[25px] pr-[5px] pb-[30px] pl-[28px] text-left lg:w-[86%] md:w-[95%] sm:w-[80%] lg:pt-[25px] md:pt-[16px] sm:pt-[25px] sm:pr-[2px] lg:pb-[30px] md:pb-[18px] sm:pb-[30px] lg:pl-[28px] md:pl-[18px] sm:pl-[28px] rounded-[10px] bg-[#000000] absolute lg:top-[310px] md:top-[195px] sm:top-[275px] top-[275px]">
+              <h1 class="text-white text-2xl font-bold">Volis <span class="text-[#1CB2D2]">$60</span></h1>
+              <p class="lg:text-[15px] md:text-[13px] sm:text-[15px] text-white font-light pt-3">There are many variations of passages of Lorem Ipsum available, but the majo</p>
+            </div>
+          </div>
+        </div>
+        <button class="h-[70px] w-[225px] hidden md:block sm:hidden relative top-[150px] bg-black text-white rounded-[20px] border-none text-[22px] duration-[400ms] hover:bg-white hover:text-black hover:duration-[400ms]">See More</button>
+      </div>
+    </div>
+    <!-- gift section -->
+
+    <!-- shop section -->
+    <div class="shop-box flex md:flex-row flex-col justify-between items-center py-[85px]">
+      <div class="shop-img md:pl-[15px] md:w-[49%] w-full md:px-0 px-[15px]">
+        <img src="./Assets/img-7.png" class="h-full w-auto" alt="">
+      </div>
+      <div class="shop-dtl xl:pt-[70px] xl:pr-[150px] md:pr-[20px] md:w-1/2 md:pl-[15px] md:pt-0 md:px-0 px-[15px] pt-[60px]">
+        <h1 class="text-[40px] font-bold text-black">Our Shop</h1>
+        <p class="font-light xl:text-[18px] xl:pt-[30px] md:pt-[12px] md:text-[16px] text-[18px] pt-[30px] leading-6">irst true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alw</p>
+        <p class="font-light xl:text-[18px] xl:pt-[40px] md:pt-[20px] md:text-[16px] text-[18px] pt-[40px] leading-6">irst true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alw</p>
+        <button class="xl:h-[73px] xl:w-[219px] h-[55px] w-[180px] mt-[19px] bg-[#B625E8] text-white rounded-[20px] border-none xl:text-[24px] text-[18px] duration-[400ms] hover:bg-[#000000] hover:duration-[400ms]">Read More</button>
+      </div>
+    </div>
+    <!-- shop section -->
+
+    <!-- location part -->
+    <div class="location-bg w-full h-auto py-[50px] bg-[url('./Assets/img-8.jpg')] bg-cover object-cover bg-no-repeat bg-center">
+      <div class="location-box flex flex-col sm:flex-row justify-between">
+        <div class="loc-form w-full sm:w-[33.4%] sm:py-[170px] py-[45px] text-center bg-[#BC38EA]">
+          <h1 class="lg:text-[40px] md:text-[30px] sm:text-[25px] text-[40px] font-bold">Contact Us</h1>
+          <input type="text" class="border-none outline-none h-[60px] w-[280px] lg:h-[70px] lg:w-[255px] md:h-[65px] md:w-[200px] sm:h-[60px] sm:w-[180px] sm:text-[30px] text-[23px] rounded-[30px] text-center mt-2 bg-white placeholder:text-[#797575]" placeholder="From"><br>
+          <input type="text" class="border-none outline-none h-[60px] w-[280px] lg:h-[70px] lg:w-[255px] md:h-[65px] md:w-[200px] sm:h-[60px] sm:w-[180px] sm:text-[30px] text-[23px] rounded-[30px] text-center mt-5 bg-black placeholder:text-[#797575] text-white" placeholder="Map">
+        </div>
+        <div class="loc-map w-full h-[500px] sm:h-auto sm:w-[66.6%]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78846.45239997082!2d70.79871066453545!3d22.287226123998913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1732689416084!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- location part -->
+
+    <!-- footer -->
+    <div class="footer-container w-full h-auto bg-[#292828]">
+      <div class="footer-list h-full w-full px-[40px] py-[70px] flex flex-wrap gap-6 justify-between xl:max-w-[1280px] xl:px-[83px] lg:flex-nowrap lg:max-w-[1024px] lg:px-[20px] md:max-w-[768px] sm:px-[88px] mx-auto">
+        <div class="footer-item h-full sm:w-[250px]">
+          <img src="./Assets/footer-logo.png" alt="">
+          <span class="mt-6 flex gap-4"><img src="./Assets/map-icon.png" class="h-[38px]" alt=""><span class="text-[#EBEBEB] leading-8 text-[16px]">Address : No 40 Baria Sreet 133/2, NewYork, USA.</span></span>
+          <span class="mt-6 flex gap-4"><img src="./Assets/call-icon.png" class="w-[28px]" alt=""><span class="text-[#EBEBEB] text-[16px]">Phone : +(1234) 567 890</span></span>
+          <span class="mt-6 flex gap-4"><img src="./Assets/email-icon.png" class="w-[28px]" alt=""><span class="text-[#EBEBEB] text-[16px]">Email : gift@wenro.com</span></span>
+          <form action="" class="mt-6 flex sm:flex-nowrap flex-wrap">
+            <input type="email" class="border-none outline-none h-[65px] sm:w-[156px] w-[75%] pl-[10px] placeholder:text-[#6e6e6e]" placeholder="Enter your email" required>
+            <input type="submit" class="h-[65px] w-[100px] bg-[#06ABCE] text-white cursor-pointer" value="Subscribe">
+          </form>
+        </div>
+        <div class="footer-item h-full w-auto pt-[35px]">
+          <h2 class="text-[28px] text-[#ebebeb] font-bold">My Account</h2>
+          <span class="flex gap-4 items-center mt-10"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Checkout</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">My Account</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">My Orders</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">My Credit Slips</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">My Addresses</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">My Personal Info</span></span>
+        </div>
+        <div class="footer-item h-full w-auto pt-[35px]">
+          <h2 class="text-[28px] text-[#ebebeb] font-bold">Information</h2>
+          <span class="flex gap-4 items-center mt-10"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Specials</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">New Products</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Best Sellers</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Our Stores</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Contact Us</span></span>
+          <span class="flex gap-4 items-center mt-5"><img src="./Assets/bulit-icon.png" class="w-[12px] h-[12px]" alt=""><span class="text-white text-[16px]">Secure Payment</span></span>
+        </div>
+        <div class="footer-item h-full w-auto pt-[35px]">
+          <h2 class="text-[28px] text-[#ebebeb] font-bold">Instagram</h2>
+          <div class="img-group sm:flex sm:gap-[30px] mt-10">
+            <div class="img-box"><img src="./Assets/footer-img1.png" class="sm:w-[115px] w-[600px]" alt=""></div>
+            <div class="img-box"><img src="./Assets/footer-img3.png" class="sm:w-[115px] w-[600px] sm:mt-0 mt-6" alt=""></div>
+          </div>
+          <div class="img-group sm:flex sm:gap-[30px] mt-6">
+            <div class="img-box"><img src="./Assets/footer-img2.png" class="sm:w-[115px] w-[600px]" alt=""></div>
+            <div class="img-box"><img src="./Assets/footer-img4.png" class="sm:w-[115px] w-[600px] sm:mt-0 mt-6" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end text-center bg-[#BC38EA] py-[19px]"><p class="text-[18px] font-light text-white">2023 All Rights Reserved. <span class="cursor-pointer duration-[400ms] hover:text-black hover:duration-[400ms]">Free html Templates</span> Distributed by <span class="cursor-pointer duration-[400ms] hover:text-black hover:duration-[400ms]">ThemeWagon</span></p></div>
+    <!-- footer -->
+  </div>
+</body>
+</html>
